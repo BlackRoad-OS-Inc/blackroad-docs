@@ -1,0 +1,42 @@
+name: Validate Documentation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    name: Markdown Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Lint Markdown
+        uses: DavidAnson/markdownlint-cli2-action@v19
+        with:
+          globs: "**/*.md"
+          config: |
+            {
+              "default": true,
+              "MD013": false,
+              "MD033": false,
+              "MD041": false
+            }
+
+  links:
+    name: Check Links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check internal links
+        run: |
+          npx --yes markdown-link-check \
+            --config '{"ignorePatterns": [{"pattern": "^http"}]}' \
+            $(find . -name "*.md" -not -path "./node_modules/*") || true
