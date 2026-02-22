@@ -1,0 +1,8 @@
+
+# Build outputs
+out/
+.next/
+dist/
+build/
+.docusaurus/
+.cache/
