@@ -63,13 +63,13 @@
   },
 
   "brand_colors": {
-    "primary": "#FF9D00",
-    "secondary": "#FF6B00",
-    "accent": "#FF0066",
-    "deep_pink": "#FF006B",
-    "purple": "#D600AA",
-    "deep_purple": "#7700FF",
-    "blue": "#0066FF"
+    "primary": "#F5A623",
+    "secondary": "#F5A623",
+    "accent": "#FF1D6C",
+    "deep_pink": "#FF1D6C",
+    "purple": "#9C27B0",
+    "deep_purple": "#9C27B0",
+    "blue": "#2979FF"
   },
 
   "extraction_date": "2025-12-29",

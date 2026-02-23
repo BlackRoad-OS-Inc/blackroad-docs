@@ -20,13 +20,13 @@
     --deep-black: #0A0A0A;
     --charcoal: #1A1A1A;
     --white: #FFFFFF;
-    --sunrise-orange: #FF9D00;
-    --warm-orange: #FF6B00;
-    --hot-pink: #FF0066;
-    --electric-magenta: #FF006B;
-    --deep-magenta: #D600AA;
-    --vivid-purple: #7700FF;
-    --cyber-blue: #0066FF;
+    --sunrise-orange: #F5A623; /* deprecated → use --amber */
+    --warm-orange: #F5A623; /* deprecated → use --amber */
+    --hot-pink: #FF1D6C; /* UPDATED to official brand */
+    --electric-magenta: #FF1D6C; /* deprecated → use --hot-pink */
+    --deep-magenta: #9C27B0; /* deprecated → use --violet */
+    --vivid-purple: #9C27B0; /* deprecated → use --violet */
+    --cyber-blue: #2979FF; /* UPDATED to official brand */
 
     /* ========== BRAND GRADIENTS ========== */
     --gradient-br: linear-gradient(180deg,
