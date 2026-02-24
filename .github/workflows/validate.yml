@@ -9,7 +9,7 @@ on:
 jobs:
   lint:
     name: Markdown Lint
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, blackroad-fleet]
     steps:
       - uses: actions/checkout@v4
 
@@ -20,7 +20,7 @@ jobs:
 
   links:
     name: Check Links
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, blackroad-fleet]
     steps:
       - uses: actions/checkout@v4
 
