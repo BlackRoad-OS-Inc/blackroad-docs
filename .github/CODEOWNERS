@@ -3,7 +3,7 @@
 # © BlackRoad OS, Inc.
 
 # Brand design docs — canonical repo is blackroad-design
-brand/ @blackboxprogramming
+/brand/ @blackboxprogramming
 
 # Operator docs — canonical repo is blackroad-operator
 guides/ @blackboxprogramming
